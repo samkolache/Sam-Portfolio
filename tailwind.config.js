@@ -8,7 +8,13 @@ export default {
     extend: {
       colors: {
         'custom-color': '#012747',
-        'light-blue': '#3498DB'
+        'light-blue': '#3498DB',
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
+      animation: {
+        shake: 'shake 0.5s ease-in-out',
       },
     },
   },
