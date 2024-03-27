@@ -13,11 +13,10 @@ export default function SectionTwo() {
                     and want to break into ML.
                 </p>
                 </div>
-            <div className="flex justify-center items-center">
-                <img src = {SkillChartSvg} />
+                <div className="flex justify-center items-center">
+                    <img src = {SkillChartSvg} />
+                </div>
             </div>
-        </div>
-            
         </div>
     )
 }
