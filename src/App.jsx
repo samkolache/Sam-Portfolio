@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import SectionOne from './components/Section1'; 
 import SectionTwo from './components/Section2'
 import SectionThree from './components/Section3'
+import SectionFour from './components/Section4'
+import SectionFive from './components/Section5';
 
 export default function App() {
   return (
@@ -11,6 +13,8 @@ export default function App() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
+      <SectionFive />
     </>
    
   )
