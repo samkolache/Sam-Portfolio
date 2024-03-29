@@ -5,6 +5,7 @@ import SectionTwo from './components/Section2'
 import SectionThree from './components/Section3'
 import SectionFour from './components/Section4'
 import SectionFive from './components/Section5';
+import Footer from './components/footer';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <SectionThree />
       <SectionFour />
       <SectionFive />
+      <Footer />
     </>
    
   )

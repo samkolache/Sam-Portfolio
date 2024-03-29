@@ -70,7 +70,9 @@ export default function SectionFour() {
                 </div>
                 </div>
                 <div className='flex justify-center items-center'>
-                <button className="bg-light-blue text-white px-6 py-3 text-lg rounded-lg transform transition duration-25 hover:scale-105">Check out my Resume!</button>
+                    <a href='https://sameer-kotecha-resume.tiiny.site/' target='_blank'>
+                         <button className="bg-light-blue text-white px-6 py-3 text-lg rounded-lg transform transition duration-25 hover:scale-105">Check out my Resume!</button>
+                    </a>
                 </div>
             </div>
         </div>
