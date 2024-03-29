@@ -12,60 +12,58 @@ import FlutterLogo from '../assets/flutter-logo.svg'
 
 export default function SectionFour() {
     return(
-        <div className="container mx-auto p-20">
+        <div id='skills' className="container mx-auto p-20">
             <div className="grid grid-cols-2 gap-8">
                 <div className="p-4">
                 <p className="text-4xl font-bold mb-4 text-custom-color">Skills</p>
                 <p className="text-2xl font-bold text-custom-color mb-2">Programming Languages:</p>
-                <div className="flex flex-wrap justify-start space-x-4">
-                    <div className="flex items-center space-x-1">
+                <div className="flex flex-wrap justify-start gap-2 mb-4">
+                    <div className="flex items-center gap-1">
                          <img className="w-5" src={HtmlLogo} alt="HTML logo"/>
-                        <p className='text-custom-color'>HTML/CSS</p>
+                        <p className='text-custom-color text-lg'>HTML/CSS</p>
                     </div>
-                    <div className="flex items-center space-x-1">
+                    <div className="flex items-center gap-1">
                          <img className="w-5" src={JsLogo} alt="HTML logo"/>
-                         <p className='text-custom-color'>Javascript/Typescript</p>
+                         <p className='text-custom-color text-lg'>Javascript/Typescript</p>
                     </div>
-                    <div className="flex items-center space-x-1">
+                    <div className="flex items-center gap-1">
                          <img className="w-5" src={SqlLogo} alt="HTML logo"/>
-                         <p className='text-custom-color'>SQL</p>
+                         <p className='text-custom-color text-lg'>SQL</p>
                     </div>
-                    <div className="flex items-center space-x-1">
+                    <div className="flex items-center gap-1">
                          <img className="w-5" src={PythonLogo} alt="HTML logo"/>
-                         <p className='text-custom-color'>Python</p>
+                         <p className='text-custom-color text-lg'>Python</p>
                     </div>
-                </div>
-                <div className="flex items-center space-x-1 mb-4">
+                    <div className="flex items-center gap-1">
                          <img className="w-5" src={DartLogo} alt="HTML logo"/>
-                         <p className='text-custom-color'>Dart</p>
-                    </div>
-                <p className="text-2xl font-bold text-custom-color mb-2">Framework & Tools:</p>
-                <div className="flex flex-wrap justify-start space-x-4">
-                    <div className="flex items-center space-x-1">
-                            <img className="w-5" src={ReactLogo} alt="HTML logo"/>
-                            <p className='text-custom-color'>React</p>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                         <img className="w-5" src={PostgreLogo} alt="HTML logo"/>
-                         <p className='text-custom-color'>PostgreSQL</p>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                         <img className="w-5" src={FigmaLogo} alt="HTML logo"/>
-                         <p className='text-custom-color'>Figma</p>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                         <img className="w-5" src={TailwindLogo} alt="HTML logo"/>
-                         <p className='text-custom-color'>Tailwind</p>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                         <img className="w-5" src={DjangoLogo} alt="HTML logo"/>
-                         <p className='text-custom-color'>Django</p>
+                         <p className='text-custom-color text-lg'>Dart</p>
                     </div>
                 </div>
-                <div className="flex flex-wrap justify-start space-x-4">
-                    <div className="flex items-center space-x-1">
+                <p className="text-2xl font-bold text-custom-color mb-2">Framework & Tools:</p>
+                <div className="flex flex-wrap justify-start gap-2">
+                    <div className="flex items-center gap-1">
+                            <img className="w-5" src={ReactLogo} alt="HTML logo"/>
+                            <p className='text-custom-color text-lg'>React</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                         <img className="w-6" src={PostgreLogo} alt="HTML logo"/>
+                         <p className='text-custom-color text-lg'>PostgreSQL</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                         <img className="w-5" src={FigmaLogo} alt="HTML logo"/>
+                         <p className='text-custom-color text-lg'>Figma</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                         <img className="w-5" src={TailwindLogo} alt="HTML logo"/>
+                         <p className='text-custom-color text-lg'>Tailwind</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                         <img className="w-5" src={DjangoLogo} alt="HTML logo"/>
+                         <p className='text-custom-color text-lg'>Django</p>
+                    </div>
+                    <div className="flex items-center gap-1">
                          <img className="w-5" src={FlutterLogo} alt="HTML logo"/>
-                         <p className='text-custom-color'>Flutter</p>
+                         <p className='text-custom-color text-lg'>Flutter</p>
                     </div>
                 </div>
                 </div>

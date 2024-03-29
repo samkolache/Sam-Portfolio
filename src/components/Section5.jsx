@@ -3,20 +3,21 @@ import LinkedinLogo from '../assets/linkedin-logo.svg'
 
 export default function SectionFive() {
     return(
-        <div className="container mx-auto p-20">
+        <div id='contact' className="container mx-auto p-20">
             <div className="grid grid-cols-2 gap-8">
                 <div className="p-4">
                     <p className="text-4xl font-bold mb-4 text-custom-color">Get in Touch</p>
-                    <p className="mb-4 text-custom-color">Thank you for showing interest! If you would like to contact me, fill out the form! You can 
-                    also contact me via Linkedin or email too. I look forward to hearing from you! - Sam
+                    <p className="mb-10 text-custom-color text-lg">
+                    Hey! Thanks for viewing my portfolio website, if you would like to contact me, fill out the form. You can also via 
+                    Linkedin or email if you prefer. I look forward to hearing from you! - <span className='font-bold'>Sam</span>K
                     </p>
                     <div className="flex items-center space-x-1 mb-2">
                         <img className="w-7" src={EmailIcon}/>
-                        <a href = "mailto: abc@example.com" className="underline text-custom-color">sameerzkotecha@gmail.com</a>
+                        <a href = "mailto: abc@example.com" className="underline text-custom-color text-lg">sameerzkotecha@gmail.com</a>
                     </div>
                     <div className="flex items-center space-x-1">
                         <img className="w-7" src={LinkedinLogo}/>
-                        <a href = "https://www.linkedin.com/in/sameer-z-kotecha/" className="underline text-custom-color" target="_blank">linkedin.com/in/sameer-z-kotecha</a>
+                        <a href = "https://www.linkedin.com/in/sameer-z-kotecha/" className="underline text-custom-color text-lg" target="_blank">linkedin.com/in/sameer-z-kotecha</a>
                     </div>
                 </div>
                 <div className='p-4'>
