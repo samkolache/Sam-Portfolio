@@ -1,6 +1,8 @@
 import {Link} from 'react-scroll'
 
 export default function Navbar() {
+        
+    
     return(
         <>
             <nav className="flex justify-between items-center py-4 px-40">

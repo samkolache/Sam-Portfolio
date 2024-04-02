@@ -1,5 +1,6 @@
 import CMPImage from '../assets/cmp-project.png'
 import ComingSoon from '../assets/coming-soon.jpg'
+import {useState} from 'react'
 
 export default function SectionThree() {
     return(
@@ -31,6 +32,18 @@ function Carousel() {
         }
     ];
 
+    const [showErrorMessage, setShowErrorMessage] = useState(false);
+
+    const handleClick = (link, event) => {
+        if (link === "#") {
+            event.preventDefault(); // Prevents default action.
+            setShowErrorMessage(true); // Shows the error message.
+            setTimeout(() => setShowErrorMessage(false), 3000); // Hides the error message after 3 seconds.
+            return;
+        }
+        window.open(`https://${link}`, "_blank");
+    };
+
     return (
         <div className="flex justify-center items-center py-4">
             <div className="flex flex-nowrap">
@@ -44,13 +57,20 @@ function Carousel() {
                             <p className="text-xl font-semibold">{d.name}</p>
                             <p className="text-center text-sm">{d.snip}</p>
                             <p className="text-center text-sm"><span className='font-bold'>Skills used:</span> {d.skills}</p>
-                            <a href={`https://${d.link}`} target="_blank" rel="noopener noreferrer">
-                                <button className="px-6 py-3 bg-light-blue text-white rounded transform transition duration-25 hover:scale-105">Click to view!</button>
-                            </a>
+                            {/* Update or remove the <a> tag based on the link. */}
+                            <button onClick={(e) => handleClick(d.link, e)} className="px-6 py-3 bg-light-blue text-white rounded transform transition duration-25 hover:scale-105">
+                                Click to view!
+                            </button>
+                            {d.name === "Gym Tracker Project" && showErrorMessage && (
+                                <p className="text-custom-color text-xs mt-2 fade-in-out">
+                                    This project is still in the works. Please check back later!
+                                </p>
+                            )}
                         </div>
                     </div>
                 ))}
             </div>
         </div>
     );
+    
 }
