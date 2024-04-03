@@ -12,11 +12,14 @@ import FlutterLogo from '../assets/flutter-logo.svg'
 
 export default function SectionFour() {
     return(
-        <div id='skills' className="container mx-auto p-20">
-            <div className="grid grid-cols-2 gap-8">
-                <div className="p-4">
-                <p className="text-4xl font-bold mb-4 text-custom-color">Skills</p>
-                <p className="text-2xl font-bold text-custom-color mb-2">Programming Languages:</p>
+        <>
+          <div id="skills" style={{ height: "80px", marginTop: "-80px" }} aria-hidden="true"></div>
+
+        <div className="container mx-auto px-5 py-10 md:px-20 md:py-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p className="text-3xl md:text-4xl font-bold mb-4 text-custom-color">Skills</p>
+                    <p className="text-xl md:text-2xl font-bold text-custom-color mb-2">Programming Languages:</p>
                 <div className="flex flex-wrap justify-start gap-2 mb-4">
                     <div className="flex items-center gap-1">
                          <img className="w-5" src={HtmlLogo} alt="HTML logo"/>
@@ -39,7 +42,7 @@ export default function SectionFour() {
                          <p className='text-custom-color text-lg'>Dart</p>
                     </div>
                 </div>
-                <p className="text-2xl font-bold text-custom-color mb-2">Framework & Tools:</p>
+                <p className="text-xl md:text-2xl font-bold text-custom-color mb-2">Framework & Tools:</p>
                 <div className="flex flex-wrap justify-start gap-2">
                     <div className="flex items-center gap-1">
                             <img className="w-5" src={ReactLogo} alt="HTML logo"/>
@@ -69,10 +72,11 @@ export default function SectionFour() {
                 </div>
                 <div className='flex justify-center items-center'>
                     <a href='https://sameer-kotecha-resume.tiiny.site/' target='_blank'>
-                         <button className="bg-light-blue text-white px-6 py-3 text-lg rounded-lg transform transition duration-25 hover:scale-105">Check out my Resume!</button>
+                         <button className="bg-light-blue text-white px-4 md:px-6 py-2 md:py-3 text-md md:text-lg rounded-lg transform transition duration-300 hover:scale-105">Check out my Resume!</button>
                     </a>
                 </div>
             </div>
         </div>
+        </>
     )
 }

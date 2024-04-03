@@ -22,7 +22,7 @@ export default function SectionFive() {
         return String(email)
             .toLowerCase()
             .match(
-                /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\\.,;:\s@\"]+\.)+[^<>()[\]\\.,;:\s@\"]{2,})$/
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.)+[^<>()[\]\\.,;:\s@"]{2,})$/
             );
     };
 
@@ -67,42 +67,42 @@ export default function SectionFive() {
     };
 
     return(
-        <div id='contact' className="container mx-auto p-20">
-            <div className="grid grid-cols-2 gap-8">
-                <div className="p-4">
-                    <p className="text-4xl font-bold mb-4 text-custom-color">Get in Touch</p>
-                    <p className="mb-10 text-custom-color text-lg">
+        <div id='contact' className="container mx-auto px-5 py-10 md:px-20 md:py-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p className="text-3xl md:text-4xl font-bold mb-4 text-custom-color">Get in Touch</p>
+                    <p className="mb-8 text-custom-color text-md md:text-lg">
                         Hey! Thanks for viewing my portfolio website. If you would like to contact me, fill out the form below. 
                         You can also reach out via Linkedin or email if you prefer. I look forward to hearing from you! - <span className='font-bold'>Sam</span>K
                     </p>
-                    <div className="flex items-center space-x-1 mb-2">
+                    <div className="flex items-center gap-2 mb-2">
                         <img className="w-7" src={EmailIcon} alt="Email"/>
                         <a href="mailto:abc@example.com" className="underline text-custom-color text-lg">sameerzkotecha@gmail.com</a>
                     </div>
-                    <div className="flex items-center space-x-1">
+                    <div className="flex items-center gap-2">
                         <img className="w-7" src={LinkedinLogo} alt="LinkedIn"/>
                         <a href="https://www.linkedin.com/in/sameer-z-kotecha/" className="underline text-custom-color text-lg" target="_blank" rel="noreferrer">linkedin.com/in/sameer-z-kotecha</a>
                     </div>
                 </div>
-                <div className='p-4 relative'>
+                <div className='relative'>
                     <p className="text-4xl font-bold mb-4 text-custom-color">Say Hi :)</p>
                     <form className="space-y-4 max-w-lg mx-auto" onSubmit={handleSubmit}>
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium text-custom-color">Name</label>
-                            <input type="text" id="name" name="name" onChange={handleChange} value={formData.name} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Your name" />
+                            <input type="text" id="name" name="name" onChange={handleChange} value={formData.name} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-light-blue focus:border-light-blue" placeholder="Your name" />
                             {formErrors.name && <p className="text-red-500 text-xs">{formErrors.name}</p>}
                         </div>
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium text-custom-color">Email</label>
-                            <input type="email" id="email" name="email" onChange={handleChange} value={formData.email} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="you@example.com" />
+                            <input type="email" id="email" name="email" onChange={handleChange} value={formData.email} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-light-blue focus:border-light-blue" placeholder="you@example.com" />
                             {formErrors.email && <p className="text-red-500 text-xs">{formErrors.email}</p>}
                         </div>
                         <div>
                             <label htmlFor="message" className="block text-sm font-medium text-custom-color">Message</label>
-                            <textarea id="message" name="message" onChange={handleChange} value={formData.message} rows="4" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Write something..."></textarea>
+                            <textarea id="message" name="message" onChange={handleChange} value={formData.message} rows="4" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-light-blue focus:border-light-blue" placeholder="Write something..."></textarea>
                             {formErrors.message && <p className="text-red-500 text-xs">{formErrors.message}</p>}
                         </div>
-                        <button type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-light-blue hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <button type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-md md:text-lg font-medium text-white bg-light-blue transform transition duration-300 hover:scale-105">
                             Send Message
                         </button>
                         {submitSuccess && <p className="text-green-500 text-xs absolute bottom-full left-0 fade-in-out font-bold">Success, the email has been sent.</p>}

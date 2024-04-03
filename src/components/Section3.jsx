@@ -5,8 +5,10 @@ import {useState} from 'react'
 export default function SectionThree() {
     return(
         <>
-            <div id='projects' className="container mx-auto p-20">
-                <p className="text-4xl font-bold mb-4 text-custom-color p-4">Projects</p>
+            <div id="projects" style={{ height: "80px", marginTop: "-80px" }} aria-hidden="true"></div>
+
+            <div className="container mx-auto px-4 sm:px-10 md:px-20 py-20">
+                <p className="text-4xl font-bold mb-4 text-custom-color">Projects</p>
                     <Carousel />
             </div>
         </>

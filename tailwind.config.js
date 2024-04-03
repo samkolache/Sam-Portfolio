@@ -9,6 +9,7 @@ export default {
       colors: {
         'custom-color': '#012747',
         'light-blue': '#3498DB',
+        'nav-color': '#FFFBF5'
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
