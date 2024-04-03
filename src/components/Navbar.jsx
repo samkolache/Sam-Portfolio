@@ -8,10 +8,9 @@ export default function Navbar() {
     return (
         <>
             <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center py-4 px-6 lg:px-40 bg-nav-color">
-                <div className="logo">
+                <div className="logo pl-4">
                     <Link className='text-xl cursor-pointer' to='main' spy = {true} smooth = {true} offset={50} duration={500}><b className='text-custom-color'>Sam</b>K</Link>
                 </div>
-                {/* Custom Burger Icon */}
                 <div className="lg:hidden">
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
                         <img src={BurgerMenu} alt="Menu" className="h-6 w-6" />
